@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# For npm install of draculaui
+.npmrc
