@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: hsl(0, 8%, 11%);
+  background-color: hsl(0, 0%, 0%);
 }
 
 a {
@@ -12,8 +12,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.drac-box {
-  text-align: center;
 }
