@@ -4,10 +4,6 @@
   border: 2px solid white;
 }
 
-.picture {
-  margin: 10px;
-}
-
 @media screen and (max-width: 800px) {
   .container {
     flex-wrap: wrap;
