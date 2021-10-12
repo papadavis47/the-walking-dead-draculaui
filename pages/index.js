@@ -11,7 +11,7 @@ export default function Home() {
           The Walking Dead
         </Heading>
         <Heading color='purpleCyan' size='xl'>
-          A Loving Fansite for Season 11!
+          An Experimental Fansite for Season 11!
         </Heading>
       </Box>
       <div className={styles.holder}>
