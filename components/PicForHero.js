@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./PicForHero.module.css";
+import styles from "./PicForHero.module.scss";
 
 const PicForHero = ({ src, alt }) => {
   return (

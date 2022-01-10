@@ -1,5 +1,5 @@
 import { Box } from "@dracula/dracula-ui";
-import styles from "./ImageHero.module.css";
+import styles from "./ImageHero.module.scss";
 
 const ImageHero = ({ children }) => {
   return (
