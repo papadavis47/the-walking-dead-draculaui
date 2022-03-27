@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import ImageHero from "../components/ImageHero.js";
-import { Heading, Box, Paragraph, Divider } from "@dracula/dracula-ui";
+import { Heading, Box, Paragraph, Divider, Badge } from "@dracula/dracula-ui";
 import PicForHero from "../components/PicForHero.js";
 
 export default function Home() {
@@ -33,10 +33,11 @@ export default function Home() {
         </ImageHero>
       </div>
       <Box style={{ textAlign: "center" }}>
-        <Paragraph>I am checking out the font changes on this page</Paragraph>
+        <p>I am checking out the font changes on this page</p>
         <Divider color='green' />
         <Paragraph>Why is this not showing up??</Paragraph>
       </Box>
+      <Badge color='animated'>Fun Badge</Badge>
     </>
   );
 }
