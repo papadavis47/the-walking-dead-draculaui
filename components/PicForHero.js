@@ -1,9 +1,8 @@
 import Image from "next/image";
-import styles from "./PicForHero.module.scss";
 
 const PicForHero = ({ src, alt }) => {
   return (
-    <div className={styles.picture}>
+    <div className='picture'>
       <Image src={src} width={300} height={300} alt={alt} />
     </div>
   );
