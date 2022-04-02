@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+@import "~@dracula/dracula-ui/styles/dracula-ui.css";
+
+// reset
 
 html,
 body {
@@ -7,6 +10,7 @@ body {
   background-color: hsl(0, 0%, 0%);
   font-family: "Luxurious Roman", cursive;
   color: white;
+  min-height: 100vh;
 }
 
 a {
@@ -16,6 +20,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+// classes
+
+.mainTitle {
+  font-size: 4rem;
 }
 
 .wrapper {
@@ -37,15 +47,17 @@ a {
   margin: 10px;
 }
 
+// elements
+
 p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
+
+// media queries
 
 @media screen and (max-width: 800px) {
   .container {
     flex-wrap: wrap;
   }
 }
-
-@import "~@dracula/dracula-ui/styles/dracula-ui.css";

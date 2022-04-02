@@ -1,7 +1,8 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import ImageHero from "../components/ImageHero.js";
-import { Heading, Box, Paragraph, Divider, Badge } from "@dracula/dracula-ui";
+import { Heading, Box, Paragraph, Divider, Badge, Text } from "@dracula/dracula-ui";
 import PicForHero from "../components/PicForHero.js";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
           <Heading
             color='red'
             size='2xl'
-            style={{ fontSize: "76px", fontFamily: "Luxurious Roman, cursive" }}
+            className='mainTitle' // style={{ fontSize: "76px", fontFamily: "Luxurious Roman, cursive" }}
           >
             The Walking Dead
           </Heading>
@@ -20,7 +21,7 @@ export default function Home() {
             color='purpleCyan'
             size='xl'
             py='sm'
-            style={{ fontFamily: "Luxurious Roman, cursive" }}
+            // style={{ fontFamily: "Luxurious Roman, cursive" }}
           >
             An Experimental Fansite for Season 11!
           </Heading>
@@ -37,7 +38,16 @@ export default function Home() {
         <Divider color='green' />
         <Paragraph>Why is this not showing up??</Paragraph>
       </Box>
-      <Badge color='animated'>Fun Badge</Badge>
+      <Box my='md' style={{ textAlign: "center" }}>
+        <Link href='/characters'>
+          <a>
+            <Badge color='animated'>Characters</Badge>
+          </a>
+        </Link>
+      </Box>
+      <Text color='purple' align='center' as='p'>
+        Negan is beginning his own show with Maggie soon. I am looking forward to that.
+      </Text>
     </>
   );
 }
